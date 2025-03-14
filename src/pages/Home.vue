@@ -1,9 +1,8 @@
 <script setup>
-import { PhoneIcon } from "@heroicons/vue/24/outline";
-
+import { ChevronDoubleDownIcon } from "@heroicons/vue/24/solid";
+import { PhotoIcon, UserCircleIcon } from "@heroicons/vue/24/solid";
 
 </script>
-
 <template>
     <DefaultLayout>
         <div class="col-span-full">
