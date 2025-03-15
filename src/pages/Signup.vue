@@ -71,6 +71,13 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import GuestLayout from '../components/GuestLayout.vue';
-const props = defineProps({});
+const data = ref({
+    name: '',
+    email: '',
+    password: '',
+    password_confirmation: '',
+});
+
 </script>
