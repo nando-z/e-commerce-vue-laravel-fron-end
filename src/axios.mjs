@@ -1,4 +1,5 @@
 import axios from "axios";
+import router from "./router";
 
 export const axiosClient = axios.create({
     baseURL: import.meta.env.VITE_API_URL,
@@ -9,3 +10,13 @@ export const axiosClient = axios.create({
     },
 });
 
+
+axiosClient.interceptors.response.use(
+    response => response,
+    error => {
+        if (error.response.status === 401) {
+            router.push({ name: "Login" });
+        }
+        return Promise.reject(error);
+    }
+);
