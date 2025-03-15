@@ -72,4 +72,5 @@
 
 <script setup>
 import GuestLayout from '../components/GuestLayout.vue';
+const props = defineProps({});
 </script>
