@@ -7,6 +7,7 @@ export const axiosClient = axios.create({
     withXSRFToken: true,
     headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/json'
     },
 });
 
