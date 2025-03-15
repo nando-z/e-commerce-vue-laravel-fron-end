@@ -1,7 +1,3 @@
-<script setup>
-import GuestLayout from '../components/GuestLayout.vue';
-</script>
-
 <template>
     <GuestLayout>
 
@@ -73,3 +69,7 @@ import GuestLayout from '../components/GuestLayout.vue';
         </div>
     </GuestLayout>
 </template>
+
+<script setup>
+import GuestLayout from '../components/GuestLayout.vue';
+</script>
